@@ -1,5 +1,6 @@
 <h3>Diretivas</h3>
 <hr>
+
 <!--ngClass-->
 <strong><p>ngClass</p></strong>
 <div style="margin-right: 90%" [ngClass]="{
@@ -10,12 +11,14 @@
 </div>
 <br>
 <hr>
+
 <!--ngModel-->
 <strong><p>ngModel</p></strong>
 <input type="text" [(ngModel)]="msg" placeholder="digite...">
 <p>{{msg}}</p>
 <br>
 <hr>
+
 <!--ngFor-->
 <strong><p>ngFor</p></strong>
 <ul>
@@ -23,6 +26,7 @@
 </ul>
 <br>
 <hr>
+
 <!--ngIf-->
 <strong><p>ngIf</p></strong>
 <div *ngIf="!acesso">
@@ -34,6 +38,7 @@
 <button (click)="botaoIf();">permitir ou negar</button>
 <br>
 <hr>
+
 <!--ngSwitch-->
 <strong><p>ngSwitch</p></strong>
 <div [ngSwitch]="cores">
