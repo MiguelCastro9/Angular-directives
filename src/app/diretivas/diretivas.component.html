@@ -1,0 +1,46 @@
+<h3>Diretivas</h3>
+<hr>
+<!--ngClass-->
+<strong><p>ngClass</p></strong>
+<div style="margin-right: 90%" [ngClass]="{
+  'roxo':condicao,
+  'laranja':!condicao
+}">
+  <p (click)="click();">Clique na cor</p>
+</div>
+<br>
+<hr>
+<!--ngModel-->
+<strong><p>ngModel</p></strong>
+<input type="text" [(ngModel)]="msg" placeholder="digite...">
+<p>{{msg}}</p>
+<br>
+<hr>
+<!--ngFor-->
+<strong><p>ngFor</p></strong>
+<ul>
+  <p *ngFor="let f of frutas, let i = index">{{i + 1}} - {{f}}</p>
+</ul>
+<br>
+<hr>
+<!--ngIf-->
+<strong><p>ngIf</p></strong>
+<div *ngIf="!acesso">
+  <p style="color: red;">Acesso negado</p>
+</div>
+<div *ngIf="acesso">
+  <p style="color: green;">Acesso permitido</p>
+</div>
+<button (click)="botaoIf();">permitir ou negar</button>
+<br>
+<hr>
+<!--ngSwitch-->
+<strong><p>ngSwitch</p></strong>
+<div [ngSwitch]="cores">
+  <p *ngSwitchCase="'azul'" style="color: blue">AZUL</p>
+  <p *ngSwitchCase="'roxo'" style="color: violet">ROXO</p>
+  <p *ngSwitchCase="'vermelho'" style="color: red">VERMELHO</p>
+  <button (click)="botaoSwitch();">Sortear</button>
+</div>
+<br>
+<hr>
