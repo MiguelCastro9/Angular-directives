@@ -1,6 +1,6 @@
 # Overview
 
-Understanding Angular directives.
+Understanding directives in Angular.
 
 <br>
 
